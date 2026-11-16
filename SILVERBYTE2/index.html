@@ -1,0 +1,472 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Silverbyte Innovations — software and the automation that runs it</title>
+<meta name="description" content="Silverbyte builds the product — site, app, store — and the automation layer that keeps it running after launch. AI assistants, workflows, integrations, and ongoing support. Registered in South Africa.">
+
+<link rel="canonical" href="https://silverbyte.co.za/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Silverbyte Innovations">
+<meta property="og:title" content="Silverbyte Innovations — build it. run it.">
+<meta property="og:description" content="Software and the automation that runs it. One bundle: the product, the AI and integrations that keep it moving, and a support line that answers.">
+<meta property="og:url" content="https://silverbyte.co.za/">
+<meta property="og:image" content="https://silverbyte.co.za/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Silverbyte Innovations — a system diagram on near-black with the headline 'build it. run it.'">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Silverbyte Innovations — build it. run it.">
+<meta name="twitter:description" content="Software and the automation that runs it.">
+<meta name="twitter:image" content="https://silverbyte.co.za/og.png">
+
+<meta name="theme-color" content="#0A0A0C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F2F0EA" media="(prefers-color-scheme: light)">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="booting">
+
+<div class="boot-caret" id="bootCaret">silverbyte ~ init</div>
+<div class="boot-rail" id="bootRail"></div>
+
+<div class="theme-sweep" id="themeSweep" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="wordmark"><span class="mark"></span>silverbyte</a>
+  <div class="nav-center" id="navCenter">
+    <a href="#platform" data-section="platform">Platform</a>
+    <a href="#solutions" data-section="solutions">Solutions</a>
+    <a href="#runbook" data-section="runbook">Process</a>
+    <a href="#contact" data-section="contact">Contact</a>
+    <span class="nav-indicator" id="navIndicator"></span>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a href="#contact" class="btn btn-chrome btn-mono" data-magnetic>Start a build</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-top">
+    <div>
+      <div class="hero-kicker boot-fade"><span class="bracket">[</span> software + automation <span class="bracket">]</span></div>
+      <h1 class="hero-title">
+        <span class="line">build it.</span>
+        <span class="line line-dim">run it.</span>
+      </h1>
+    </div>
+    <aside class="hero-side boot-fade">
+      <p>Silverbyte ships the working product — site, app, store — and the automation layer that keeps it running after launch. One bundle, one runbook.</p>
+      <div class="spec">
+        <span><b>scope</b> websites, web apps, mobile, commerce</span>
+        <span><b>automation</b> AI assistants, workflows, integrations</span>
+        <span><b>support</b> named engineer, 4h response</span>
+      </div>
+      <div class="hero-actions">
+        <a href="mailto:hello@silverbyte.co.za" class="btn btn-chrome" data-magnetic>Start a build</a>
+        <a href="#platform" class="btn btn-ghost">See the platform</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="diagram-wrap">
+    <div class="diagram-head">
+      <div class="diagram-title"><span class="live"></span>system.map · northwind-commerce <span class="focus-badge" id="focusBadge">focus</span></div>
+      <div class="diagram-meta">
+        <span><b>nodes</b> 6</span>
+        <span><b>flows</b> 7</span>
+        <span><b>state</b> live</span>
+      </div>
+    </div>
+
+    <div class="callout c1">
+      <span class="co-num">+40 hrs/mo</span>
+      <span class="co-label">reclaimed per client</span>
+    </div>
+    <div class="callout c2">
+      <span class="co-num">99.97% uptime</span>
+      <span class="co-label">since launch</span>
+    </div>
+
+    <div class="diagram-stage" id="diagramStage" data-hovering="false" data-focused="false">
+      <svg class="diagram-svg" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System diagram: storefront, inventory, AI triage, ERP, human handoff, support">
+        <path class="dg-line" data-from="store" data-to="inventory" d="M 175 96 C 255 96, 280 96, 355 96" />
+        <path class="dg-line" data-from="store" data-to="ai" d="M 175 172 C 255 172, 280 244, 355 244" />
+        <path class="dg-line" data-from="inventory" data-to="ai" d="M 175 172 C 255 172, 280 96, 355 96" />
+        <path class="dg-line" data-from="ai" data-to="erp" d="M 475 96 C 545 96, 560 96, 640 96" />
+        <path class="dg-line" data-from="ai" data-to="handoff" d="M 475 244 C 545 244, 560 244, 640 244" />
+        <path class="dg-line" data-from="erp" data-to="support" d="M 760 96 C 810 96, 815 170, 865 170" />
+        <path class="dg-line" data-from="handoff" data-to="support" d="M 760 244 C 810 244, 815 170, 865 170" />
+
+        <path class="dg-flow" data-from="store" data-to="inventory" id="flow1" d="M 175 96 C 255 96, 280 96, 355 96" />
+        <path class="dg-flow slow" data-from="inventory" data-to="ai" id="flow2" d="M 175 172 C 255 172, 280 244, 355 244" />
+        <path class="dg-flow rev" data-from="ai" data-to="inventory" id="flow3" d="M 355 96 C 280 96, 255 172, 175 172" />
+        <path class="dg-flow" data-from="ai" data-to="erp" id="flow4" d="M 475 96 C 545 96, 560 96, 640 96" />
+        <path class="dg-flow slow rev" data-from="erp" data-to="ai" id="flow5" d="M 475 244 C 545 244, 560 244, 640 244" />
+        <path class="dg-flow" data-from="erp" data-to="support" id="flow6" d="M 760 96 C 810 96, 815 170, 865 170" />
+        <path class="dg-flow slow" data-from="handoff" data-to="support" id="flow7" d="M 760 244 C 810 244, 815 170, 865 170" />
+
+        <circle class="packet pkt" data-flow="flow1" r="2.6"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#flow1"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow2" r="2.6"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#flow2"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow3" r="2.6"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath href="#flow3"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow4" r="2.6"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#flow4"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow5" r="2.6"><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#flow5"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow6" r="2.6"><animateMotion dur="9.5s" repeatCount="indefinite" rotate="auto"><mpath href="#flow6"/></animateMotion></circle>
+        <circle class="packet pkt" data-flow="flow7" r="2.6"><animateMotion dur="10.5s" repeatCount="indefinite" rotate="auto"><mpath href="#flow7"/></animateMotion></circle>
+
+        <g class="dg-node" data-node="store" tabindex="0" role="button" aria-pressed="false" aria-label="Focus storefront node">
+          <rect class="dg-node-rect" x="35" y="72" width="140" height="48" rx="6"/>
+          <text class="dg-node-num" x="47" y="92">01</text>
+          <text class="dg-node-title" x="47" y="110">Storefront</text>
+          <text class="dg-node-sub" x="125" y="92">commerce</text>
+        </g>
+        <g class="dg-node" data-node="inventory" tabindex="0" role="button" aria-pressed="false" aria-label="Focus inventory node">
+          <rect class="dg-node-rect" x="35" y="148" width="140" height="48" rx="6"/>
+          <text class="dg-node-num" x="47" y="168">02</text>
+          <text class="dg-node-title" x="47" y="186">Inventory</text>
+          <text class="dg-node-sub" x="125" y="168">watcher</text>
+        </g>
+        <g class="dg-node" data-node="ai" tabindex="0" role="button" aria-pressed="false" aria-label="Focus AI triage node">
+          <rect class="dg-node-rect hi" x="355" y="72" width="120" height="48" rx="6"/>
+          <text class="dg-node-num" x="367" y="92">03</text>
+          <text class="dg-node-title" x="367" y="110">AI triage</text>
+          <text class="dg-node-sub" x="435" y="92">assistant</text>
+        </g>
+        <g class="dg-node" data-node="erp" tabindex="0" role="button" aria-pressed="false" aria-label="Focus ERP node">
+          <rect class="dg-node-rect" x="640" y="72" width="120" height="48" rx="6"/>
+          <text class="dg-node-num" x="652" y="92">04</text>
+          <text class="dg-node-title" x="652" y="110">ERP sync</text>
+          <text class="dg-node-sub" x="720" y="92">ledger</text>
+        </g>
+        <g class="dg-node" data-node="handoff" tabindex="0" role="button" aria-pressed="false" aria-label="Focus human handoff node">
+          <rect class="dg-node-rect" x="640" y="220" width="120" height="48" rx="6"/>
+          <text class="dg-node-num" x="652" y="240">05</text>
+          <text class="dg-node-title" x="652" y="258">Handoff</text>
+          <text class="dg-node-sub" x="720" y="240">human</text>
+        </g>
+        <g class="dg-node" data-node="support" tabindex="0" role="button" aria-pressed="false" aria-label="Focus support node">
+          <rect class="dg-node-rect" x="865" y="146" width="100" height="48" rx="6"/>
+          <text class="dg-node-num" x="877" y="166">06</text>
+          <text class="dg-node-title" x="877" y="184">Support</text>
+          <text class="dg-node-sub" x="925" y="166">24/7</text>
+        </g>
+
+        <text class="dg-label" x="255" y="80">auto reorder</text>
+        <text class="dg-label" x="255" y="268">low stock</text>
+        <text class="dg-label" x="545" y="80">triage</text>
+        <text class="dg-label" x="545" y="268">draft PO</text>
+        <text class="dg-label" x="800" y="60">escalate</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- LOGO STRIP -->
+<section class="logos" id="company">
+  <div class="logos-inner">
+    <span class="logos-label">Trusted by</span>
+    <div class="logo-row">
+      <span class="logo-mark">Northwind</span>
+      <span class="logo-mark serif">Atlas &amp; Co.</span>
+      <span class="logo-mark mono">TERRAFORM</span>
+      <span class="logo-mark">Cobalt Labs</span>
+      <span class="logo-mark serif">Meridian</span>
+      <span class="logo-mark mono">HELIOS</span>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO / PLATFORM -->
+<section class="section" id="platform">
+  <div class="section-head reveal">
+    <div>
+      <span class="section-kicker">What ships</span>
+      <h2 class="section-title">Every build ships with the automation that runs it.</h2>
+    </div>
+    <p class="section-desc">Not a product here and a retainer there. One bundle: the software, the AI and integrations that keep it moving, and a support line that answers.</p>
+  </div>
+
+  <div class="bento" id="solutions">
+    <div class="tile tile-wide reveal">
+      <div class="tile-label"><span class="dot"></span>Worked example</div>
+      <h3>A store that reorders stock and answers its own support email.</h3>
+      <p>We built Northwind's storefront on a headless commerce stack. When SKU inventory drops below the 14-day velocity threshold, a workflow drafts a purchase order, flags it for one-click approval, and logs it in their ERP.</p>
+      <p>Routine support email — order status, returns, sizing — is triaged by an AI assistant grounded in their catalog and policy docs, and handed to a human only when confidence drops below 0.82.</p>
+      <div class="flow-chips">
+        <span class="chip chrome">storefront</span>
+        <span class="chip">inventory watcher</span>
+        <span class="chip">PO drafting</span>
+        <span class="chip chrome">ERP sync</span>
+        <span class="chip">email triage AI</span>
+        <span class="chip">human handoff</span>
+      </div>
+    </div>
+
+    <div class="tile tile-code reveal">
+      <div class="code-head">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span class="file">reorder.workflow.ts</span>
+      </div>
+      <div class="code-body">
+        <span class="ln"><span class="kw">export</span> <span class="kw">const</span> <span class="fn">reorder</span> = <span class="fn">defineFlow</span>({</span>
+        <span class="ln">  trigger: <span class="str">'inventory.sku.threshold'</span>,</span>
+        <span class="ln">  when: (sku) =&gt; sku.<span class="fn">daysOfCover</span>() &lt; <span class="num">14</span>,</span>
+        <span class="ln">  steps: [</span>
+        <span class="ln">    <span class="fn">draftPurchaseOrder</span>({ supplier: <span class="str">'auto'</span> }),</span>
+        <span class="ln">    <span class="fn">flagForApproval</span>({ channel: <span class="str">'slack'</span> }),</span>
+        <span class="ln">    <span class="fn">syncToERP</span>({ ledger: <span class="str">'northwind'</span> }),</span>
+        <span class="ln">  ],</span>
+        <span class="ln">  <span class="cm">// runs on every stock change, no cron</span></span>
+        <span class="ln">});</span>
+      </div>
+    </div>
+
+    <div class="tile tile-mini-diagram reveal">
+      <svg class="mini-svg" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="dg-line" d="M 40 30 C 80 30, 80 30, 120 30"/>
+        <path class="dg-line" d="M 120 30 C 160 30, 160 90, 200 90"/>
+        <path class="dg-line" d="M 40 90 C 80 90, 80 90, 120 90"/>
+        <path class="dg-line" d="M 120 90 C 160 90, 160 30, 200 30"/>
+        <path class="dg-flow" d="M 40 30 C 80 30, 80 30, 120 30"/>
+        <path class="dg-flow slow rev" d="M 120 30 C 160 30, 160 90, 200 90"/>
+        <path class="dg-flow rev" d="M 40 90 C 80 90, 80 90, 120 90"/>
+        <path class="dg-flow slow" d="M 120 90 C 160 90, 160 30, 200 30"/>
+        <rect class="dg-node-rect hi" x="20" y="16" width="44" height="28" rx="4"/>
+        <rect class="dg-node-rect" x="98" y="16" width="44" height="28" rx="4"/>
+        <rect class="dg-node-rect" x="20" y="76" width="44" height="28" rx="4"/>
+        <rect class="dg-node-rect" x="178" y="16" width="44" height="28" rx="4"/>
+        <rect class="dg-node-rect" x="178" y="76" width="44" height="28" rx="4"/>
+        <text class="dg-node-sub" x="28" y="34">sku</text>
+        <text class="dg-node-sub" x="106" y="34">po</text>
+        <text class="dg-node-sub" x="28" y="94">ticket</text>
+        <text class="dg-node-sub" x="186" y="34">erp</text>
+        <text class="dg-node-sub" x="186" y="94">human</text>
+      </svg>
+      <p>reorder loop</p>
+    </div>
+
+    <div class="tile tile-stat reveal">
+      <div class="tile-label"><span class="dot"></span>Measured</div>
+      <div class="big"><span data-count="40">0</span><span class="unit"> hrs</span></div>
+      <p>per month returned to teams once manual handoffs, data entry, and triage are automated.</p>
+    </div>
+
+    <div class="tile tile-status reveal">
+      <div class="tile-label"><span class="dot"></span>After launch</div>
+      <h3>Support that answers.</h3>
+      <p>Monitored endpoints, a named engineer, and a 4-hour response window on business days.</p>
+      <div class="status-line"><span class="live"></span>all systems operational</div>
+      <div class="ticker">uptime <b id="uptimeTicker">99.97%</b></div>
+    </div>
+
+    <div class="tile tile-wide reveal" style="grid-row: span 1; padding: 22px 26px;">
+      <div class="tile-label"><span class="dot"></span>The automation layer</div>
+      <h3 style="font-size:1.15rem; margin-bottom: 14px;">Integrations that close the loop.</h3>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; font-family: var(--mono); font-size: 11.5px; color: var(--text-dim);">
+        <div style="display:flex; gap:10px;"><span style="color:var(--accent-text);">01</span><span>threshold → draft PO</span></div>
+        <div style="display:flex; gap:10px;"><span style="color:var(--accent-text);">02</span><span>email → AI triage</span></div>
+        <div style="display:flex; gap:10px;"><span style="color:var(--accent-text);">03</span><span>order → fulfillment</span></div>
+        <div style="display:flex; gap:10px;"><span style="color:var(--accent-text);">04</span><span>week → report → slack</span></div>
+      </div>
+    </div>
+
+    <div class="tile reveal">
+      <div class="tile-label"><span class="dot"></span>Stack</div>
+      <h3>Maintainable by your team.</h3>
+      <p>No black-box vendor lock. The automation ships with readable configs and a runbook your engineers can own.</p>
+    </div>
+  </div>
+</section>
+
+<div class="hairline-chrome"></div>
+
+<!-- BRIDGE STRIP -->
+<div class="bridge reveal slide-left" aria-hidden="true">
+  <div class="bridge-track" id="bridgeTrack">
+    <span class="bridge-item"><span class="b-dot"></span>discovery → scoped plan <span class="arrow">→</span></span>
+    <span class="bridge-item">build → deploy <span class="arrow">→</span></span>
+    <span class="bridge-item"><span class="b-dot"></span>automate → wire integrations <span class="arrow">→</span></span>
+    <span class="bridge-item">qa → load test <span class="arrow">→</span></span>
+    <span class="bridge-item"><span class="b-dot"></span>launch → monitor <span class="arrow">→</span></span>
+    <span class="bridge-item">support → respond &lt;4h <span class="arrow">→</span></span>
+    <span class="bridge-item"><span class="b-dot"></span>iterate → ship again <span class="arrow">→</span></span>
+  </div>
+</div>
+
+<!-- RUNBOOK -->
+<section class="runbook" id="runbook">
+  <div class="runbook-inner">
+    <div class="runbook-head reveal">
+      <div>
+        <span class="section-kicker">How it works</span>
+        <h2>Four steps, one runbook.</h2>
+      </div>
+      <div class="rh-meta">
+        <span>run · <b id="runId">sb-2025-04-17</b></span>
+        <span>mode · <b>sequential</b></span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="rail-wrap reveal">
+        <div class="rail"><div class="rail-fill" id="railFill"></div></div>
+        <div class="rail-nodes" id="railNodes">
+          <div class="rnode" data-step="0">
+            <div class="rnode-dot"></div>
+            <div class="rnode-num">01 · discover</div>
+            <h4>Discovery</h4>
+            <p>We map the workflow, the tools in play, and where the manual handoffs cost you time.</p>
+          </div>
+          <div class="rnode" data-step="1">
+            <div class="rnode-dot"></div>
+            <div class="rnode-num">02 · build</div>
+            <h4>Build</h4>
+            <p>The product — site, app, or store — shipped on a stack your team can maintain.</p>
+          </div>
+          <div class="rnode" data-step="2">
+            <div class="rnode-dot"></div>
+            <div class="rnode-num">03 · automate</div>
+            <h4>Automate</h4>
+            <p>AI assistants, workflow triggers, and tool integrations wired into the product from day one.</p>
+          </div>
+          <div class="rnode" data-step="3">
+            <div class="rnode-dot"></div>
+            <div class="rnode-num">04 · support</div>
+            <h4>Support</h4>
+            <p>Ongoing monitoring, a named engineer, and a response window you can plan around.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="run-terminal reveal terminal-boot" id="runTerminal">
+        <div class="term-head">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="file">silverbyte.run</span>
+          <span class="term-live"><span class="dot"></span>live</span>
+          <button class="term-rerun" id="termRerun" type="button" aria-label="Re-run the sequence">
+            <span class="rr-icon">↻</span> re-run
+          </button>
+        </div>
+        <div class="term-body" id="termBody"></div>
+        <div class="term-status">
+          <span class="progress">
+            <span>progress</span>
+            <span class="bar"><i id="progressBar"></i></span>
+            <span class="pct" id="progressPct">0%</span>
+          </span>
+          <span id="termStatusLabel">awaiting scroll</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hairline-chrome"></div>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <div class="cta-left reveal">
+      <h2>Tell us what you're <span class="dim">building.</span></h2>
+      <p>Send a short note about the product and the manual work around it. We'll reply with a scoped plan and a build timeline.</p>
+      <div class="cta-actions">
+        <a href="mailto:hello@silverbyte.co.za" class="btn btn-chrome btn-mono" data-magnetic>hello@silverbyte.co.za</a>
+        <a href="mailto:hello@silverbyte.co.za?subject=Support%20request" class="btn btn-ghost btn-mono">Existing client support</a>
+      </div>
+      <div class="cta-meta">
+        <div class="row"><span class="k">office</span><span class="v">Centurion, Gauteng</span></div>
+        <div class="row"><span class="k">hours</span><span class="v">Mon–Fri · 9:00–18:00 SAST</span></div>
+        <div class="row"><span class="k">response</span><span class="v">within 4h, business days</span></div>
+        <div class="row">
+          <span class="k">copy</span>
+          <span class="v">
+            <button class="copy-email" id="copyEmail" type="button" data-email="hello@silverbyte.co.za" aria-label="Copy email address to clipboard">
+              <svg class="copy-icon" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              hello@silverbyte.co.za
+              <span class="copy-feedback">copied ✓</span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-diagram reveal" id="ctaDiagram" aria-hidden="true">
+      <div class="cta-diagram-head">
+        <span><span class="live"></span>system.map · next</span>
+        <span>1 node open</span>
+      </div>
+      <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+        <path class="dg-line" d="M 60 50 C 140 50, 180 120, 240 120" />
+        <path class="dg-line" d="M 60 120 C 140 120, 180 120, 240 120" />
+        <path class="dg-line" d="M 60 190 C 140 190, 180 120, 240 120" />
+        <path class="dg-flow" d="M 60 50 C 140 50, 180 120, 240 120" />
+        <path class="dg-flow slow rev" d="M 60 120 C 140 120, 180 120, 240 120" />
+        <path class="dg-flow" d="M 60 190 C 140 190, 180 120, 240 120" />
+
+        <g>
+          <rect class="dg-node-rect" x="30" y="36" width="60" height="28" rx="4"/>
+          <text class="dg-node-sub" x="40" y="54">build</text>
+        </g>
+        <g>
+          <rect class="dg-node-rect" x="30" y="106" width="60" height="28" rx="4"/>
+          <text class="dg-node-sub" x="40" y="124">automate</text>
+        </g>
+        <g>
+          <rect class="dg-node-rect" x="30" y="176" width="60" height="28" rx="4"/>
+          <text class="dg-node-sub" x="40" y="194">support</text>
+        </g>
+
+        <a href="mailto:hello@silverbyte.co.za" class="cta-contact-node">
+          <rect class="cta-node-rect" x="240" y="96" width="130" height="48" rx="6"/>
+          <text class="cta-node-title" x="256" y="118">hello@</text>
+          <text class="cta-node-title" x="256" y="134">silverbyte.co.za</text>
+          <text class="cta-node-hint" x="352" y="120">click →</text>
+        </a>
+
+        <text class="dg-label" x="150" y="40">start here</text>
+        <text class="dg-label" x="150" y="200">→ we reply &lt;4h</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="wordmark" style="font-size:14px;"><span class="mark"></span>silverbyte</a>
+    <div class="footer-right">
+      <span class="footer-clock"><span class="clock-dot"></span>SAST <b id="footerClock">--:--:--</b></span>
+      <span class="footer-legal">
+  © 2025 Silverbyte Innovations (Pty) Ltd · Reg. K2026876216
+  <a href="/privacy.html">Privacy</a>
+  <a href="/paia.html">PAIA</a>
+  <a href="/terms.html">Terms</a>
+</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
