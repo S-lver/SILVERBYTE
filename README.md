@@ -461,7 +461,7 @@ This is required for a South African private company on its website. Do not remo
 
 - **No cookies, no analytics.** The privacy policy states this plainly.
 - **Privacy policy** (`privacy.html`) explains what is collected (email enquiries, server logs), why, how long it's kept, and how to exercise POPIA rights.
-- **Information Officer** must be a named person. Replace `[surname]` in `privacy.html` and `paia.html` before launch.
+- **Information Officer** must be a named person. Replace `[Mokgata]` in `privacy.html` and `paia.html` before launch.
 - **Cross-border transfer:** because there is no analytics, there is no cross-border transfer of personal information to disclose.
 
 ### PAIA
