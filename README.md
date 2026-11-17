@@ -140,8 +140,8 @@ Before launch, complete every item below. Each one is a real edit in a real file
 
 | # | What to change | File | Current value | Replace with |
 | --- | --- | --- | --- | --- |
-| 1 | Information Officer surname | `privacy.html` | `[surname]` | Your full surname |
-| 2 | Information Officer surname | `paia.html` | `[surname]` | Your full surname |
+| 1 | Information Officer surname | `privacy.html` | `[mokgata]` | My full surname |
+| 2 | Information Officer surname | `paia.html` | `[Mokgata]` | My full surname |
 
 ### 6.2 Contact details
 
